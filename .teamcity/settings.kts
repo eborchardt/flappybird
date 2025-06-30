@@ -53,6 +53,7 @@ object BuildA : BuildType({
 
     vcs {
         root(DslContext.settingsRoot, "-:.idea", "+:*")
+        root(AbsoluteId("MySandbox_HttpsGithubComEborchardtSsd1306Scroll"))
     }
 
     steps {
