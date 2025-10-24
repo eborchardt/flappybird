@@ -25,7 +25,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2025.03"
+version = "2025.07"
 
 project {
 
@@ -61,7 +61,7 @@ object BuildA : BuildType({
             id = "Maven2"
             goals = "clean test package"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
-            jdkHome = "%env.JDK_17_0_x64%"
+            param("org.jfrog.artifactory.selectedDeployableServer.defaultModuleVersionConfiguration", "GLOBAL")
         }
     }
 })
