@@ -53,7 +53,7 @@ object BuildA : BuildType({
 
     vcs {
         root(DslContext.settingsRoot, "-:.idea", "+:*")
-        root(AbsoluteId("ExampleProjectCopy_HttpsGithubComEborchardtSsd1306Scroll"), "+:scrollLongMessage")
+        root(AbsoluteId("ExampleProject_HttpsGithubComEborchardtSsd1306Scroll"), "+:scrollLongMessage")
     }
 
     steps {
